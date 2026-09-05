@@ -6,7 +6,7 @@ import { routes } from "@/lib/brand";
 
 export const metadata = {
   title: "Reset password",
-  description: "Reset access to your Verenne member space.",
+  description: "Reset access to your Unica member space.",
 };
 
 export default function ForgotPage() {

@@ -1,6 +1,6 @@
 export const brand = {
-  name: "Verenne",
-  line: "Private introductions",
+  name: "Unica",
+  line: "Meet fewer, more meaningfully",
 };
 
 export const routes = {
@@ -17,7 +17,7 @@ export const routes = {
   privacy: "/privacy",
   terms: "/terms",
   safety: "/safety",
-  concierge: "mailto:concierge@verenne.com",
+  concierge: "mailto:concierge@unica.house",
 };
 
 export const appRoutes = {

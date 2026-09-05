@@ -6,7 +6,7 @@ import { SiteChrome } from "@/components/shell/SiteChrome";
 
 export const metadata = {
   title: "Our approach",
-  description: "Fewer introductions, chosen with care. How Verenne works.",
+  description: "Fewer introductions, chosen with care. How Unica works.",
 };
 
 const chapters = [
@@ -33,7 +33,7 @@ const chapters = [
   {
     n: "05",
     title: "A facilitated first meeting",
-    copy: "Verenne schedules the first introduction. There is no inbox, and no exchange of numbers in this chapter. Afterwards, we ask how it felt — privately.",
+    copy: "Unica schedules the first introduction. There is no inbox, and no exchange of numbers in this chapter. Afterwards, we ask how it felt — privately.",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function ApproachPage() {
       <PageHero
         kicker="Our approach"
         title="Fewer introductions. Chosen with care."
-        copy="Verenne is not a marketplace. Members do not message strangers. A matchmaker confirms mutual interest before anything private is exchanged."
+        copy="Unica is not a marketplace. Members do not message strangers. A matchmaker confirms mutual interest before anything private is exchanged."
       />
 
       <section className="mx-auto max-w-6xl px-6 pt-6 pb-8 sm:px-10">

@@ -6,7 +6,7 @@ import { routes } from "@/lib/brand";
 export function ClosingBand({
   kicker = "Begin privately",
   title = "Meet someone worth knowing",
-  copy = "Membership is by application. If Verenne is right for you, a matchmaker will be in touch.",
+  copy = "Membership is by application. If Unica is right for you, a matchmaker will be in touch.",
 }: {
   kicker?: string;
   title?: string;

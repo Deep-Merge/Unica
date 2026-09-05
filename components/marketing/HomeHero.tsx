@@ -26,7 +26,7 @@ export function HomeHero() {
             style={{ animationDelay: "180ms" }}
           >
             <span className="hidden h-px w-8 bg-brass/70 sm:block" aria-hidden />
-            Private introductions
+            Meet fewer, more meaningfully
           </p>
           <h1
             className="rise mt-5 max-w-[12ch] font-serif text-[52px] leading-[0.98] text-ivory sm:text-[76px] lg:text-[84px]"

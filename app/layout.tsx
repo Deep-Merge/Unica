@@ -20,10 +20,10 @@ const sans = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: "Verenne — Private introductions",
-    template: "%s — Verenne",
+    default: "Unica — Meet fewer, more meaningfully",
+    template: "%s — Unica",
   },
-  description: "A considered way to meet. Membership is by application.",
+  description: "Meet fewer people, more meaningfully. Membership is by application.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

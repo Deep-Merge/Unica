@@ -3,7 +3,7 @@ import { SiteChrome } from "@/components/shell/SiteChrome";
 
 export const metadata = {
   title: "Terms",
-  description: "Membership terms for Verenne private introductions.",
+  description: "Membership terms for Unica private introductions.",
 };
 
 const sections = [
@@ -13,7 +13,7 @@ const sections = [
   },
   {
     title: "The service",
-    copy: "Verenne facilitates introductions. We do not guarantee a relationship. Four introductions are included in a three-month concierge term. A matchmaker may grant one additional introduction.",
+    copy: "Unica facilitates introductions. We do not guarantee a relationship. Four introductions are included in a three-month concierge term. A matchmaker may grant one additional introduction.",
   },
   {
     title: "Conduct",

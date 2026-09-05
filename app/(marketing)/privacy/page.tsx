@@ -3,7 +3,7 @@ import { SiteChrome } from "@/components/shell/SiteChrome";
 
 export const metadata = {
   title: "Privacy",
-  description: "How Verenne holds member information.",
+  description: "How Unica holds member information.",
 };
 
 const sections = [

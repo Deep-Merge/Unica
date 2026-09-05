@@ -33,7 +33,7 @@ export function ConciergePage() {
             }`}
           >
             <p className="text-[11px] tracking-[0.16em] text-muted uppercase">
-              {message.from === "house" ? "Verenne" : "You"} · {message.at}
+              {message.from === "house" ? "Unica" : "You"} · {message.at}
             </p>
             <p className="mt-2 text-[15px] leading-relaxed text-ink">{message.body}</p>
           </article>

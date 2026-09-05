@@ -28,7 +28,7 @@ export function SignInSplit() {
             className="rise text-[11px] font-medium tracking-[0.28em] text-ivory/80 uppercase"
             style={{ animationDelay: "200ms" }}
           >
-            Private introductions
+            Meet fewer, more meaningfully
           </p>
           <h2
             className="rise mt-3 max-w-md font-serif text-[40px] leading-[1.08] text-ivory sm:text-[52px]"

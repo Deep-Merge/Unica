@@ -1,3 +1,5 @@
+import { brand } from "@/lib/brand";
+
 type MarkProps = {
   className?: string;
   tone?: "light" | "dark";
@@ -22,7 +24,7 @@ export function Mark({ className = "", tone = "light" }: MarkProps) {
           strokeLinejoin="round"
         />
       </svg>
-      <span className="text-[11px] font-medium uppercase">Verenne</span>
+      <span className="text-[11px] font-medium uppercase">{brand.name}</span>
     </span>
   );
 }

@@ -4,7 +4,7 @@ import { SiteChrome } from "@/components/shell/SiteChrome";
 
 export const metadata = {
   title: "Consultation",
-  description: "A complimentary thirty-minute conversation with a Verenne matchmaker.",
+  description: "A complimentary thirty-minute conversation with a Unica matchmaker.",
 };
 
 export default function ConsultationPage() {

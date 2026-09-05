@@ -1,7 +1,7 @@
 export const faqs = [
   {
     q: "Do members message each other?",
-    a: "No. There is no open inbox. Every introduction is facilitated by Verenne. Contact details are not exchanged in the first chapter.",
+    a: "No. There is no open inbox. Every introduction is facilitated by Unica. Contact details are not exchanged in the first chapter.",
   },
   {
     q: "Who may apply?",
@@ -17,7 +17,7 @@ export const faqs = [
   },
   {
     q: "What happens after I apply?",
-    a: "A matchmaker reviews your application, usually within two business days. If Verenne is a considered fit, we invite you to a private conversation.",
+    a: "A matchmaker reviews your application, usually within two business days. If Unica is a considered fit, we invite you to a private conversation.",
   },
   {
     q: "Can I keep my profile private?",
@@ -25,7 +25,7 @@ export const faqs = [
   },
   {
     q: "How do I decline an introduction?",
-    a: "Quietly, through Verenne. The other person is never told they were declined. They simply see that the introduction will not be moving forward.",
+    a: "Quietly, through Unica. The other person is never told they were declined. They simply see that the introduction will not be moving forward.",
   },
   {
     q: "What if no introduction feels right?",
@@ -72,6 +72,6 @@ export const membershipIncludes = [
   },
   {
     title: "A scheduled first meeting",
-    copy: "Verenne arranges the first introduction. Phone numbers and social accounts stay with us until that chapter is complete.",
+    copy: "Unica arranges the first introduction. Phone numbers and social accounts stay with us until that chapter is complete.",
   },
 ];

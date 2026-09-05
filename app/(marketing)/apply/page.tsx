@@ -4,7 +4,7 @@ import { SiteChrome } from "@/components/shell/SiteChrome";
 
 export const metadata = {
   title: "Apply",
-  description: "Apply privately for Verenne membership. Every application is reviewed by a matchmaker.",
+  description: "Apply privately for Unica membership. Every application is reviewed by a matchmaker.",
 };
 
 export default function ApplyPage() {
@@ -25,7 +25,7 @@ export default function ApplyPage() {
             <p className="text-[11px] font-medium tracking-[0.28em] text-ivory/75 uppercase">Membership</p>
             <h2 className="mt-3 max-w-md font-serif text-[44px] leading-[1.08] text-ivory">Apply privately</h2>
             <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-ivory/78">
-              We read every application. If Verenne is a considered fit, a matchmaker will invite you to a conversation.
+              We read every application. If Unica is a considered fit, a matchmaker will invite you to a conversation.
             </p>
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function ApplyPage() {
             <p className="text-[11px] font-medium tracking-[0.28em] text-muted uppercase lg:hidden">Membership</p>
             <h1 className="mt-3 font-serif text-[40px] text-charcoal lg:hidden">Apply privately</h1>
             <p className="mt-3 mb-10 text-[15px] leading-relaxed text-muted lg:hidden">
-              We read every application. If Verenne is a considered fit, a matchmaker will invite you to a conversation.
+              We read every application. If Unica is a considered fit, a matchmaker will invite you to a conversation.
             </p>
             <ApplyForm />
           </div>

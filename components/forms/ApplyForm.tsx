@@ -46,7 +46,7 @@ export function ApplyForm() {
         <p className="text-[11px] font-medium tracking-[0.28em] text-muted uppercase">Application received</p>
         <h2 className="mt-3 font-serif text-[36px] leading-[1.1] text-charcoal">Thank you. We will read this carefully.</h2>
         <p className="mt-4 text-[16px] leading-relaxed text-muted">
-          A matchmaker reviews every application, usually within two business days. If Verenne is a considered fit, we will write to you privately.
+          A matchmaker reviews every application, usually within two business days. If Unica is a considered fit, we will write to you privately.
         </p>
       </div>
     );

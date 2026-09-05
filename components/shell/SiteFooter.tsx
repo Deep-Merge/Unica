@@ -1,12 +1,14 @@
 import Link from "next/link";
-import { navFooter, routes } from "@/lib/brand";
+import { brand, navFooter, routes } from "@/lib/brand";
 
 export function SiteFooter() {
   return (
     <footer className="border-t border-line bg-ivory">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-12 sm:px-10 lg:flex-row lg:items-end lg:justify-between">
         <div>
-          <p className="text-[11px] tracking-[0.18em] text-muted uppercase">Verenne · Private introductions</p>
+          <p className="text-[11px] tracking-[0.18em] text-muted uppercase">
+            {brand.name} · {brand.line}
+          </p>
           <p className="mt-3 max-w-sm text-[14px] leading-relaxed text-muted">
             A considered way to meet. Membership is by application.
           </p>

@@ -6,16 +6,16 @@ import { SiteChrome } from "@/components/shell/SiteChrome";
 
 export const metadata = {
   title: "About",
-  description: "Verenne is a private matchmaking house. Technology helps. People decide.",
+  description: "Unica is a private matchmaking house. Technology helps. People decide.",
 };
 
 export default function AboutPage() {
   return (
     <SiteChrome>
       <PageHero
-        kicker="About Verenne"
+        kicker="About Unica"
         title="A private house for serious introductions."
-        copy="We built Verenne for people who are tired of performing for strangers. The work is human. The software exists to protect time, privacy, and the quality of a first meeting."
+        copy="We built Unica for people who are tired of performing for strangers. Meet fewer people, more meaningfully. The work is human. The software exists to protect time, privacy, and the quality of a first meeting."
       />
 
       <section className="mx-auto max-w-6xl px-6 pb-8 sm:px-10">

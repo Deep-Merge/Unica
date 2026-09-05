@@ -1,4 +1,4 @@
-# Verenne
+# Unica
 
 Private concierge matchmaking. Members do not message each other. Every introduction is facilitated.
 
