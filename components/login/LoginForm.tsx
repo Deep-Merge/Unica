@@ -6,10 +6,12 @@ import { FormEvent, useState } from "react";
 import { useDemo } from "@/components/demo/DemoProvider";
 import { IconApple, IconEye, IconEyeOff, IconGoogle } from "@/components/icons";
 import { routes } from "@/lib/brand";
+import { createHouseClient, isSupabaseConfigured } from "@/lib/supabase/client";
 
 export function LoginForm() {
   const [showPassword, setShowPassword] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
   const router = useRouter();
   const { signIn } = useDemo();
 
@@ -19,10 +21,29 @@ export function LoginForm() {
     window.setTimeout(() => router.push(href), 400);
   }
 
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const email = String(new FormData(event.currentTarget).get("email") ?? "julian@studio.com");
-    enter(email);
+    setError("");
+    const data = new FormData(event.currentTarget);
+    const email = String(data.get("email") ?? "").trim();
+    const password = String(data.get("password") ?? "");
+
+    if (isSupabaseConfigured() && password) {
+      const client = createHouseClient();
+      if (client) {
+        setSubmitting(true);
+        const { error: next } = await client.auth.signInWithPassword({ email, password });
+        if (next) {
+          setSubmitting(false);
+          setError(next.message);
+          return;
+        }
+        enter(email);
+        return;
+      }
+    }
+
+    enter(email || "julian@studio.com");
   }
 
   return (
@@ -104,6 +125,8 @@ export function LoginForm() {
         </a>
       </div>
 
+      {error ? <p className="mt-4 text-[13px] text-oxblood">{error}</p> : null}
+
       <button
         type="submit"
         disabled={submitting}
@@ -148,9 +171,13 @@ export function LoginForm() {
         </button>
       </p>
       <p className="rise mt-6 text-center text-[13px] text-muted" style={{ animationDelay: "960ms" }}>
-        Not yet a member?{" "}
-        <Link href={routes.apply} className="text-charcoal underline decoration-charcoal/20 transition-colors hover:decoration-charcoal">
-          Apply for membership
+        New to Unica?{" "}
+        <Link href={routes.signup} className="text-charcoal underline decoration-charcoal/20 hover:decoration-charcoal">
+          Create an account
+        </Link>
+        <span className="mx-2 text-oat">·</span>
+        <Link href={routes.apply} className="text-charcoal underline decoration-charcoal/20 hover:decoration-charcoal">
+          Apply
         </Link>
       </p>
     </form>

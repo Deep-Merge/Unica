@@ -6,6 +6,7 @@ export const brand = {
 export const routes = {
   home: "/",
   login: "/login",
+  signup: "/signup",
   apply: "/apply",
   approach: "/approach",
   membership: "/membership",
