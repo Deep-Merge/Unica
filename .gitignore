@@ -1,0 +1,44 @@
+# Private working documents — never commit
+_docs/
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js / build
+.next/
+out/
+dist/
+.turbo/
+*.tsbuildinfo
+
+# Environment — keep only .env.example
+.env
+.env.*
+!.env.example
+
+# House server store (local backend)
+.data/
+
+# Supabase local cache
+.supabase/
+
+# Logs and debug
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Secrets and local dumps
+*.pem
+*.p12
+*.key
+coverage/
+playwright-report/
+test-results/

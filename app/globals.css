@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+@import "../styles/motion.css";
+
+@theme inline {
+  --color-ivory: var(--ivory);
+  --color-cream: var(--cream);
+  --color-limestone: var(--limestone);
+  --color-oat: var(--oat);
+  --color-field: var(--field);
+  --color-charcoal: var(--charcoal);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-oxblood: var(--oxblood);
+  --color-oxblood-deep: var(--oxblood-deep);
+  --color-brass: var(--brass);
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-outfit);
+}
+
+html,
+body {
+  background: var(--ivory);
+  color: var(--ink);
+}
+
+body {
+  font-family: var(--font-sans), "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--oxblood) 18%, white);
+  color: var(--charcoal);
+}
+
+a {
+  text-underline-offset: 0.18em;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+.kicker {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.surface {
+  background: var(--cream);
+  border: 1px solid var(--line);
+}
+
+.link-quiet {
+  color: var(--muted);
+  transition: color var(--duration-quick) var(--ease-luxury);
+}
+
+.link-quiet:hover {
+  color: var(--charcoal);
+}
+
+.img-zoom {
+  transition: transform 0.9s var(--ease-luxury);
+}
+
+.group:hover .img-zoom {
+  transform: scale(1.035);
+}

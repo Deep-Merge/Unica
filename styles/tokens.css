@@ -1,0 +1,20 @@
+:root {
+  --ivory: #f7f2ea;
+  --cream: #f3eee4;
+  --limestone: #ebe3d4;
+  --oat: #ddd4c4;
+  --field: #efe7da;
+  --charcoal: #1f1b18;
+  --ink: #2a2521;
+  --muted: #6a635b;
+  --line: rgba(31, 27, 24, 0.1);
+  --oxblood: #6a2c32;
+  --oxblood-deep: #542328;
+  --brass: #c2a36f;
+  --brass-line: rgba(194, 163, 111, 0.45);
+  --radius: 6px;
+  --radius-sm: 4px;
+  --ease-luxury: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-quick: 180ms;
+  --duration-page: 700ms;
+}
